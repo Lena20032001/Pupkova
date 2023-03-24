@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Магазин товаров для дома</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+function loadData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(resolve, 5000);
+  })
+}
+
+loadData()
+  .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });
+  </script>
+<header class="site-header">
+  <div class="container">
+  <h1>Gloevk</h1>
+    <p>Разнообразные товары для дома с доставкой по всей планете</p>
+    <img src="gloevk-examples.png" width="510" height="80">
+  </div>
+</header>
+<main>
+  <div id="preloader" class="visible"></div>
+<h2><p>EXAMPLE</p></h2>
+<section class="features">
+  <h2>Что поможет вам создать домашний уют?</h2>
+  <p class="feature-furniture"><img src="furniture.svg">
+    Мебель и фарнитура</p>
+  <p class="feature-lighting"><img src="lighting.svg">
+    Лампы и торшеры</p>
+  <p class="feature-accessories"><img src="accessories.svg">
+    Аксессуары и мелочи</p>
+</section>
+<section class="advantages">
+  <h2>Что выделяет нас среди конкурентов?</h2>
+  <ul class="advantages-list">
+    <li class="advantages-item">Используем только природные материалы</li>
+    <li class="advantages-item standard">Ежедневные отчеты о ходе работ</li>
+    <li class="advantages-item standard">Сами соберем мебель для вас</li>
+    <li class="advantages-item vip">Бесплатное гарантийное обслуживание в течение 10 лет</li>
+    <li class="advantages-item vip">Доставка в день заказа</li>
+  </ul>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+  <p>©️ Тест, 2022</p>
+<p><a href="index1.html">Магазин товаров для дома</a>
+</p>
+</div>
+</footer>
+</body>
+  </html>
