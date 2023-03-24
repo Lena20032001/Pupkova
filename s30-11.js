@@ -28,5 +28,5 @@ drawCircle();
 document.getElementById('stopAnimating').addEventListener('click',function(){
  setTimeout(() => {
     continueAnimating=false;
-  }, Math.floor(Math.random() * 5000));
+  }, Math.floor(Math.random() * 1000));
 });
